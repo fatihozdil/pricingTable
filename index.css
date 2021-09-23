@@ -1,0 +1,166 @@
+html, body {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    background-color: #F5F5F5;
+    padding: 40px 0;
+}
+
+.best-value, th {
+    border: 0px;
+}
+
+.best-value th {
+    background-color: #F5F5F5 !important;
+}
+.best-value th:nth-of-type(3) {
+    background-color: #B7D342 !important;
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 1px 1px 10px 2px #EFEFEF;
+    margin: 0 auto;
+    width: 60%;
+}
+
+td, th {
+    border: 1px solid #F5F5F5;
+    
+}
+
+th h3 {
+    color: #626262;
+    margin-bottom: 0px;
+}
+
+th p {
+    color: #BBBBBB;
+    font-size: 0.625em;
+white-space: nowrap;
+}
+
+th button {
+    width: 80%;
+    font-size: 1em;
+    height: 35px;
+    margin: 25px 0;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+}
+
+th:nth-of-type(2) button {
+    background-color: #7C6E99;
+}
+
+th:nth-of-type(3) button {
+    background-color: #B7D342;
+}
+
+th:nth-of-type(4) button {
+    background-color: #4C7CA5;
+}
+
+td {
+    text-align: center;
+}
+
+
+td:first-child {
+    width: 13.75em;
+}
+
+.category tr {
+    background-color: #F7F7F7;
+    box-shadow: 1px 1px 2px 2px #EFEFEF;
+    cursor: pointer;
+}
+
+.category_title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+}
+.category_title  h4{
+    text-align: left;
+
+}
+
+.category_title span:nth-of-type(1) {
+    color: #9B9B9B;
+}
+
+.category_title span:nth-of-type(2) {
+    color: #B7D342
+}
+
+.category_subtitle {
+    text-transform: capitalize;
+    text-align: left;
+    padding-left: 35px;
+}
+
+.hide {
+    height: 0px !important;
+    font-size: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.hide span {
+    font-size: 0;
+    transition: all 0.3s ease;
+    color: #B7D342;
+}
+
+.hide td {
+    font-size: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    border: 0px;
+    text-align: center;
+    transition: all .3s ease;
+    color: #A2A2A2;
+}
+
+.show {
+    height: 64px;
+    font-size: 1em;
+    overflow: auto;
+}
+
+.show span {
+    font-size: 1.5em;
+}
+
+.show td {
+    font-size: 1em;
+    border: 1px solid #F5F5F5
+}
+@media screen and (max-width: 913px){
+    table{width: 98%;}
+    th button {
+        font-size : .625em
+        
+    }
+}
+@media screen and (max-width: 457px) {
+    body {
+        font-size: 11px;
+    }
+    td:first-child {
+        width: 11.75em;
+    }
+
+}

@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Table</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr class="best-value">
+          <th></th>
+          <th></th>
+          <th>BEST VALUE</th>
+          <th></th>
+        </tr>
+      </thead>
+      <thead>
+        <tr>
+          <th></th>
+          <th>
+            <div>
+              <h3>Basic</h3>
+              <div>
+                <h3>$297</h3>
+                <p>billed yearly</p>
+              </div>
+              <button>Buy Basic</button>
+            </div>
+          </th>
+          <th>
+            <div>
+              <h3>Business</h3>
+              <div>
+                <h3>$697</h3>
+                <p>billed yearly</p>
+              </div>
+              <button>Buy Business</button>
+            </div>
+          </th>
+          <th>
+            <div>
+              <h3>Pro</h3>
+              <div>
+                <h3>$997</h3>
+                <p>billed yearly</p>
+              </div>
+              <button>Buy Pro</button>
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <!-- general category row start -->
+      <tbody class="category">
+        <tr onclick="expandHandler(event)" id="general">
+          <td>
+            <div class="category_title">
+              <span class="material-icons"> keyboard_arrow_down </span>
+              <h4>General</h4>
+              <span class="material-icons"> help_outline </span>
+            </div>
+          </td>
+          <td><h4>Yes</h4></td>
+          <td><h4>Yes</h4></td>
+          <td><h4>Yes</h4></td>
+        </tr>
+      </tbody>
+      <!-- general category row end -->
+
+      <!-- sub categories of general start -->
+      <tbody class="hide general">
+        <tr>
+          <td>
+            <p class="category_subtitle">Number of sites</p>
+          </td>
+          <td><p>1</p></td>
+          <td><p>5</p></td>
+          <td><p>15</p></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Media manager</p>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">3rd party integrations</p>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Team Members</p>
+          </td>
+          <td><p>0</p></td>
+          <td><p>3</p></td>
+          <td><p>10</p></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">'Powered by' logo</p>
+          </td>
+          <td><p>Always active</p></td>
+          <td><p>Optional</p></td>
+          <td><p>Optional</p></td>
+        </tr>
+      </tbody>
+      <!-- sub categories of general end -->
+
+      <!-- Funnel Builder category start -->
+      <tbody class="category">
+        <tr onclick="expandHandler(event)" id="funnel_builder">
+          <td>
+            <div class="category_title">
+              <span class="material-icons"> keyboard_arrow_down </span>
+              <h4>Funnel Builder</h4>
+              <span class="material-icons"> help_outline </span>
+            </div>
+          </td>
+          <td><h4>Yes</h4></td>
+          <td><h4>Yes</h4></td>
+          <td><h4>Yes</h4></td>
+        </tr>
+      </tbody>
+      <!-- Funnel Builder category end -->
+
+      <!-- sub categories of funnel builder start -->
+      <tbody class="hide funnel_builder">
+        <tr>
+          <td>
+            <p class="category_subtitle">Number of funnels</p>
+          </td>
+          <td><p>10</p></td>
+          <td><p>100</p></td>
+          <td><p>500</p></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Number of Templates Groups</p>
+          </td>
+          <td><p>5</p></td>
+          <td><p>15</p></td>
+          <td><p>99999</p></td>
+        </tr>
+        <tr>
+          <td><p class="category_subtitle">Split testing</p></td>
+          <td>
+            <span class="material-icons" style="color: red">close</span>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Mobile optimizer</p>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">in-built conversion tools</p>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">HTML download</p>
+          </td>
+          <td>
+            <span class="material-icons" style="color: red">close</span>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">save as template</p>
+          </td>
+          <td>
+            <span class="material-icons" style="color: red">close</span>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">clone page</p>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">unique visitors</p>
+          </td>
+          <td><p>25,000</p></td>
+          <td><p>100,000</p></td>
+          <td><p>unlimited</p></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Transfer Funnels</p>
+          </td>
+          <td>
+            <span class="material-icons" style="color: red">close</span>
+          </td>
+          <td>
+            <span class="material-icons" style="color: red">close</span>
+          </td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+      </tbody>
+      <!-- sub categories of funnel builder end -->
+
+      <!-- Product Builder category start -->
+      <tbody class="category">
+        <tr onclick="expandHandler(event)" id="product_builder">
+          <td>
+            <div class="category_title">
+              <span class="material-icons"> keyboard_arrow_down </span>
+              <h4>Product Builder</h4>
+              <span class="material-icons"> help_outline </span>
+            </div>
+          </td>
+          <td><h4>Yes</h4></td>
+          <td><h4>Yes</h4></td>
+          <td><h4>Yes</h4></td>
+        </tr>
+      </tbody>
+      <!-- Product Builder category end -->
+      <!-- sub categories of Product builder start -->
+      <tbody class="hide product_builder">
+        <tr>
+          <td>
+            <p class="category_subtitle">Number of Products</p>
+          </td>
+          <td><p>10</p></td>
+          <td><p>50</p></td>
+          <td><p>250</p></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Membership Module Products</p>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Digital Products</p>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Instasuite Checkout</p>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Multiple Price Points</p>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Coupons and Discount</p>
+          </td>
+          <td>
+            <span class="material-icons" style="color: red">close</span>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Automation Actions</p>
+          </td>
+          <td>
+            <span class="material-icons" style="color: red">close</span>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Digital Product Delivery-Email</p>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">
+              Digital Product Delivery-Redirect URL
+            </p>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">
+              Digital Product Delivery-Upload File
+            </p>
+          </td>
+          <td>
+            <span class="material-icons" style="color: red">close</span>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Digital Product Delivery-ISPDN</p>
+          </td>
+          <td>
+            <span class="material-icons" style="color: red">close</span>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Export Orders to CSV</p>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+      </tbody>
+      <!-- sub categories of Product Builder end -->
+
+      <!-- membership Builder category start -->
+      <tbody class="category">
+        <tr onclick="expandHandler(event)" id="membership_builder">
+          <td>
+            <div class="category_title">
+              <span class="material-icons"> keyboard_arrow_down </span>
+              <h4>Membership Builder</h4>
+              <span class="material-icons"> help_outline </span>
+            </div>
+          </td>
+          <td><h4>Yes</h4></td>
+          <td><h4>Yes</h4></td>
+          <td><h4>Yes</h4></td>
+        </tr>
+      </tbody>
+      <!-- membership Builder category end -->
+      <!-- sub categories of Membership builder start -->
+      <tbody class="hide membership_builder">
+        <tr>
+          <td>
+            <p class="category_subtitle">in-built SMTP</p>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">number of themes</p>
+          </td>
+          <td><p>1</p></td>
+          <td><p>3</p></td>
+          <td><p>5</p></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Number of Members</p>
+          </td>
+          <td><p>1,000</p></td>
+          <td><p>5,000</p></td>
+          <td><p>100,000</p></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">member tags</p>
+          </td>
+          <td>
+            <span class="material-icons" style="color: red">close</span>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">drip-feed</p>
+          </td>
+          <td>
+            <span class="material-icons" style="color: red">close</span>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">member progress tracking</p>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">quiz tracking</p>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">design editor</p>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+      </tbody>
+      <!-- sub categories of Membership Builder end -->
+      <!-- list Builder category start -->
+      <tbody class="category">
+        <tr onclick="expandHandler(event)" id="list_builder">
+          <td>
+            <div class="category_title">
+              <span class="material-icons"> keyboard_arrow_down </span>
+              <h4>List Builder</h4>
+              <span class="material-icons"> help_outline </span>
+            </div>
+          </td>
+          <td><h4>Yes</h4></td>
+          <td><h4>Yes</h4></td>
+          <td><h4>Yes</h4></td>
+        </tr>
+      </tbody>
+      <!-- List Builder category end -->
+      <!-- sub categories of List builder start -->
+      <tbody class="hide list_builder">
+        <tr>
+          <td>
+            <p class="category_subtitle">SMTP setup</p>
+          </td>
+          <td><p>own</p></td>
+          <td><p>own</p></td>
+          <td><p>own</p></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Blacklist domain, email, IP</p>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Block role-based email</p>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Number of Lists</p>
+          </td>
+          <td><p>10</p></td>
+          <td><p>100</p></td>
+          <td><p>unlimited</p></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Number of Subscribers</p>
+          </td>
+          <td><p>1,000</p></td>
+          <td><p>5,000</p></td>
+          <td><p>100,000</p></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Manual/Bulk Import</p>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">List segmentation</p>
+          </td>
+          <td>
+            <span class="material-icons" style="color: red">close</span>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Automations</p>
+          </td>
+          <td>
+            <span class="material-icons" style="color: red">close</span>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Optin forms</p>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Broadcasts</p>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Sequences</p>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Save email templates</p>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+      </tbody>
+      <!-- sub categories of List Builder end -->
+      <!-- Blog Builder category start -->
+      <tbody class="category">
+        <tr onclick="expandHandler(event)" id="blog_builder">
+          <td>
+            <div class="category_title">
+              <span class="material-icons"> keyboard_arrow_down </span>
+              <h4>Blog Builder</h4>
+              <span class="material-icons"> help_outline </span>
+            </div>
+          </td>
+          <td><h4>Yes</h4></td>
+          <td><h4>Yes</h4></td>
+          <td><h4>Yes</h4></td>
+        </tr>
+      </tbody>
+      <!-- Blog Builder category end -->
+      <!-- sub categories of Blog builder start -->
+      <tbody class="hide blog_builder">
+        <tr>
+          <td>
+            <p class="category_subtitle">Widgets</p>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Menu</p>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Theme customization</p>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Number of Themes</p>
+          </td>
+          <td><p>1</p></td>
+          <td><p>3</p></td>
+          <td><p>3</p></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Number of Posts</p>
+          </td>
+          <td><p>unlimited</p></td>
+          <td><p>unlimited</p></td>
+          <td><p>unlimited</p></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Theme customization</p>
+          </td>
+          <td></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+      </tbody>
+      <!-- sub categories of Blog Builder end -->
+      <!-- Affiliate center category start -->
+      <tbody class="category">
+        <tr onclick="expandHandler(event)" id="affiliate_center">
+          <td>
+            <div class="category_title">
+              <span class="material-icons"> keyboard_arrow_down </span>
+              <h4>Affiliate Center</h4>
+              <span class="material-icons"> help_outline </span>
+            </div>
+          </td>
+          <td><h4>No</h4></td>
+          <td><h4>Yes</h4></td>
+          <td><h4>Yes</h4></td>
+        </tr>
+      </tbody>
+      <!-- Affiliate center category end -->
+      <!-- sub categories of Affiliate center start -->
+      <tbody class="hide affiliate_center">
+        <tr>
+          <td>
+            <p class="category_subtitle">In-built SMTP</p>
+          </td>
+          <td></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Promotion Tools</p>
+          </td>
+          <td></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Manage Commissions</p>
+          </td>
+          <td></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Number of affiliates</p>
+          </td>
+          <td></td>
+          <td><p>1000</p></td>
+          <td><p>5000</p></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Number of Themes</p>
+          </td>
+          <td></td>
+          <td><p>1</p></td>
+          <td><p>1</p></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Post categories</p>
+          </td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+      </tbody>
+      <!-- sub categories of affiliate center end -->
+      <!-- support desk category start -->
+      <tbody class="category">
+        <tr onclick="expandHandler(event)" id="support_desk">
+          <td>
+            <div class="category_title">
+              <span class="material-icons"> keyboard_arrow_down </span>
+              <h4>Support Desk</h4>
+              <span class="material-icons"> help_outline </span>
+            </div>
+          </td>
+          <td><h4>No</h4></td>
+          <td><h4>Yes</h4></td>
+          <td><h4>Yes</h4></td>
+        </tr>
+      </tbody>
+      <!-- support desk category end -->
+      <!-- sub categories of Support Desk start -->
+      <tbody class="hide support_desk">
+        <tr>
+          <td>
+            <p class="category_subtitle">Number of staff</p>
+          </td>
+          <td></td>
+          <td><p>3</p></td>
+          <td><p>10</p></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">in-built SMTP</p>
+          </td>
+          <td></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Number of canned responses</p>
+          </td>
+          <td></td>
+          <td><p>20</p></td>
+          <td><p>100</p></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">knowledgebase</p>
+          </td>
+          <td></td>
+          <td><span class="material-icons">done</span></td>
+          <td><span class="material-icons">done</span></td>
+        </tr>
+        <tr>
+          <td>
+            <p class="category_subtitle">Number of Themes</p>
+          </td>
+          <td></td>
+          <td><p>1</p></td>
+          <td><p>1</p></td>
+        </tr>
+      </tbody>
+      <!-- sub categories of Support Desk end -->
+
+      <tr>
+        <th></th>
+        <th>
+          <button>Buy Basic</button>
+        </th>
+        <th>
+          <button>Buy Business</button>
+        </th>
+        <th>
+          <button>Buy Pro</button>
+        </th>
+      </tr>
+    </table>
+    <script>
+      let expandHandler;
+
+      expandHandler = (event) => {
+        const isOpen = document.querySelector(".show");
+
+        //close open ones when trying to open another category
+        if (isOpen && !isOpen.classList.contains(event.currentTarget.id)) {
+          isOpen.classList.remove("show");
+          //rotate arrow downward
+          const category = document.getElementById(isOpen.classList[1]);
+
+          category.getElementsByTagName("span")[0].innerHTML =
+            "keyboard_arrow_down";
+        }
+
+        const classname = `.${event.currentTarget.id}`;
+        const el = document.querySelector(classname);
+
+        //change arrow rotation conditionally
+        if (
+          event.currentTarget.getElementsByTagName("span")[0].innerHTML ===
+          "keyboard_arrow_up"
+        ) {
+          event.currentTarget.getElementsByTagName("span")[0].innerHTML =
+            "keyboard_arrow_down";
+        } else {
+          event.currentTarget.getElementsByTagName("span")[0].innerHTML =
+            "keyboard_arrow_up";
+        }
+
+        el.classList.toggle("show");
+      };
+
+      
+    </script>
+  </body>
+</html>
